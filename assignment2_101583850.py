@@ -71,7 +71,8 @@ class NetworkTool:
 
 # Q1: How does PortScanner reuse code from NetworkTool?
 
-# 
+    # By using the inheritence to add onto the __init__ and __del__ functions as well as using super(). to 
+    # access and modify the target variable
 #
 
 # Create the PortScanner child class that inherits from NetworkTool (Step vi)
@@ -302,3 +303,7 @@ if __name__ == "__main__":
 # Q5: New Feature Proposal
 # TODO: Your 2-3 sentence description here... (Part 2, Q5)
 # Diagram: See diagram_studentID.png in the repository root
+
+# A new Feature that could be added to this Program is a menu interface. Currently the entire program works as a single string but if 
+# the ports have already been scanned you will always need to rescan a group, and add it to the SQLite database. But by adding a menu 
+# a user would be able to check the database without going through the entire program first. 
